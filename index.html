@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>It is not Pyton</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <!-- FIRST STEP -->
+<section class="game start">
+    <div class="start_container">
+        <img class="mb-4 logo" src="./assets/ololo.jpg" width="55%" alt="">
+        <h1 class="h3 mb-3 fw-normal">Он вам не Питон!</h1>
+        <p class="mb-2">Привет мой друг! Полина ты или кто-то еще... это не важно. <br> А важно то,что мы будем играть в игру</p>
+        <p class="mb-5 text-muted">Я загадаю число от 1 до 10, и если ты знаешь алгоритм быстрого поиска, то ты отгадаешь его с вероятностью чуть больше бесконечной бесконечности процентов</p>
+        <button class="w-100 btn btn-lg btn-success mb-8 startBtn" type="submit">Начнемс</button>
+    </div>
+</section>
+    <!-- FIRST STEP -->
+
+    <!-- MAIN GAME -->
+<section class="game main">
+    <form class="gameForm">
+        <img class="mb-4 logo" width="50%" src="./assets/1.jpg" alt="">
+        <h1 class="h3 mb-3 fw-normal">Угадай или умри!!!</h1>
+
+        <div class="form-floating mb-4">
+            <input name="answer" type="text" class="form-control answerValue" id="floatingInput" >
+            <label for="floatingInput">Число от 1 до 10</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-outline-success" type="submit">Ответъ</button>
+        <p class="mt-5 mb-3 text-muted">У тебя <span class="lives">0</span> жиськи...</p>
+    </form>
+</section>
+    <!-- MAIN GAME -->
+
+    <!-- NOT CORRECT TYPE -->
+<section class="game not-correct-symbol">
+    <div>
+        <img class="mb-4 logo" src="./assets/facepalm.jpg" alt="">
+        <h1 class="h3 mb-3 fw-normal">Хоть ты и тупенкай(я)</h1>
+        <p>Я позволю тебе продолжить, но жизнь все равно спишу...</p>
+
+        <button class="w-100 btn btn-lg btn-warning mb-8 return_to_game_btn" type="submit">Продолжить</button>
+        <p class="mt-5 mb-3 text-muted">Ну рили... Ты не можешь цифру от чего-то другого отличить???</p>
+    </div>
+</section>
+    <!-- NOT CORRECT TYPE -->
+
+    <!-- MADE MISTAKE -->
+<section class="game not-our-number">
+    <div>
+        <img class="mb-4 logo" src="./assets/delphy.jpg" width="55%" alt="">
+        <h1 class="h3 mb-3 fw-normal">Минус жиська</h1>
+        <p class="clue">Но вот подсказка. Чило которое мы загадали меньше</p>
+
+        <button class="w-100 btn btn-lg btn-warning mb-8 return_to_game_btn" type="submit">Продолжить</button>
+        <p class="mt-5 mb-3 text-muted">Давай! Ты сможешь! Ты дельфин! Покажи им свои зубы!</p>
+    </div>
+</section>
+    <!-- MADE MISTAKE -->
+
+    <!-- MISTAKE WITH RANGE -->
+<section class="game error_range">
+    <div>
+        <img class="mb-4 logo" src="./assets/stup.jpg" width="55%" alt="">
+        <h1 class="h3 mb-3 fw-normal">Ну ты и тупой(ая)...</h1>
+        <p>Я же сказал тебе, что число может быть от одного до десяти....<br> Минус жизнь тебе за это...</p>
+
+        <button class="w-100 btn btn-lg btn-warning mb-8 return_to_game_btn" type="submit">Продолжить</button>
+        <p class="mt-5 mb-3 text-muted">Мне за тебя стыдно....</p>
+    </div>
+</section>
+    <!-- MISTAKE WITH RANGE -->
+
+    <!-- GAME OVER -->
+<section class="game game_over">
+    <div>
+        <img class="mb-4 logo" src="./assets/piz.jpg" width="55%" alt="">
+        <h1 class="h3 mb-3 fw-normal">Нуууу, ты умничка и ты пытался(ась)...</h1>
+        <p>И ты скоро сможешь все...</p>
+        <p class="mt-5 mb-3 text-muted">Ну нее. Это верх тупизма. Я даже не знаю кто тебе теперь поможет. Иди учи мат часть. Я даже кнопку 'попробовать снова' тебе не предложу!</p>
+    </div>
+</section>
+    <!-- GAME OVER -->
+
+    <!-- SUCCESS -->
+<section class="game success">
+    <div class="success_wrapper card">
+        <img class="mb-4 success_img" src="./assets/win.gif" alt="">
+        <img class="mb-4 logo" src="./assets/won.jpg" width="70%" alt="">
+        <h1 class="h3 mb-3 fw-normal">Еу ты красавчик(цавица).</h1>
+        <p>У тебя получилось, ты смог(ла) обыграть эту бездушную машину</p>
+        <p class="mt-2 mb-3 text-muted">Хвалю тебя всеми похвалами мира, но на этом все. Иди работай! Кнопки повторить не будет!</p>
+    </div>
+</section>
+    <!-- SUCCESS -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+</body>
+</html>
