@@ -28,9 +28,6 @@ const randomNum =  Math.floor(Math.random() * (11 - 1)) + 1;
 let livesCount = 3
 setLife()
 
-
-console.log(randomNum);
-
 function openBlock(block) {
     const existBlocks = [
         startBlock,
